@@ -27,23 +27,6 @@ public class ConverterGUI extends javax.swing.JFrame {
         temp1CB = new javax.swing.JComboBox<>();
         celsiusLbl = new javax.swing.JLabel();
         equationLbl = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        aboutMenu = new javax.swing.JMenu();
-        projectMenu = new javax.swing.JMenuItem();
-        temperatureMenu = new javax.swing.JMenu();
-        celsiusMenu = new javax.swing.JMenuItem();
-        farenheitMenu = new javax.swing.JMenuItem();
-        kelvinMenu = new javax.swing.JMenuItem();
-        rankineMenu = new javax.swing.JMenuItem();
-        reaumurMenu = new javax.swing.JMenuItem();
-        configMenu = new javax.swing.JMenu();
-        themeMenu = new javax.swing.JMenu();
-        darkMenu = new javax.swing.JMenuItem();
-        lightMenu = new javax.swing.JMenuItem();
-        languageMenu = new javax.swing.JMenu();
-        englishMenu = new javax.swing.JMenuItem();
-        portugueseMenu = new javax.swing.JMenuItem();
-        spanishMenu = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Temperature Converter");
@@ -83,81 +66,6 @@ public class ConverterGUI extends javax.swing.JFrame {
 
         celsiusLbl.setText("to");
 
-        aboutMenu.setText("About");
-
-        projectMenu.setText("Project");
-        projectMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                projectMenuActionPerformed(evt);
-            }
-        });
-        aboutMenu.add(projectMenu);
-
-        temperatureMenu.setText("Scales");
-
-        celsiusMenu.setText("Celsius");
-        celsiusMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                celsiusMenuActionPerformed(evt);
-            }
-        });
-        temperatureMenu.add(celsiusMenu);
-
-        farenheitMenu.setText("Fareinheit");
-        farenheitMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                farenheitMenuActionPerformed(evt);
-            }
-        });
-        temperatureMenu.add(farenheitMenu);
-
-        kelvinMenu.setText("Kelvin");
-        kelvinMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kelvinMenuActionPerformed(evt);
-            }
-        });
-        temperatureMenu.add(kelvinMenu);
-
-        rankineMenu.setText("Rankine");
-        temperatureMenu.add(rankineMenu);
-
-        reaumurMenu.setText("Reaumur");
-        temperatureMenu.add(reaumurMenu);
-
-        aboutMenu.add(temperatureMenu);
-
-        jMenuBar1.add(aboutMenu);
-
-        configMenu.setText("Config");
-
-        themeMenu.setText("Theme");
-
-        darkMenu.setText("Dark");
-        themeMenu.add(darkMenu);
-
-        lightMenu.setText("Light");
-        themeMenu.add(lightMenu);
-
-        configMenu.add(themeMenu);
-
-        languageMenu.setText("Language");
-
-        englishMenu.setText("English");
-        languageMenu.add(englishMenu);
-
-        portugueseMenu.setText("Portuguese");
-        languageMenu.add(portugueseMenu);
-
-        spanishMenu.setText("Spanish");
-        languageMenu.add(spanishMenu);
-
-        configMenu.add(languageMenu);
-
-        jMenuBar1.add(configMenu);
-
-        setJMenuBar(jMenuBar1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -182,12 +90,12 @@ public class ConverterGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tempTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(temp2CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(temp1CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(celsiusLbl)))
+                        .addComponent(celsiusLbl))
+                    .addComponent(tempTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(equationLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -209,7 +117,6 @@ public class ConverterGUI extends javax.swing.JFrame {
                 temp2CB.getSelectedItem().toString()
         );
             setResult(temp);
-            setEquation(temp);
         } catch (NumberFormatException e) {
             javax.swing.JOptionPane.showMessageDialog(null, "Enter a valid value", "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -240,28 +147,11 @@ public class ConverterGUI extends javax.swing.JFrame {
                 temp2CB.getSelectedItem().toString()
         );
             setResult(temp);
-            setEquation(temp);
         } catch (NumberFormatException e) {
             javax.swing.JOptionPane.showMessageDialog(null, "Enter a valid value", "Error", JOptionPane.ERROR_MESSAGE);
         }
         
     }//GEN-LAST:event_converterBtnActionPerformed
-
-    private void projectMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_projectMenuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_projectMenuActionPerformed
-
-    private void celsiusMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_celsiusMenuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_celsiusMenuActionPerformed
-
-    private void kelvinMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kelvinMenuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kelvinMenuActionPerformed
-
-    private void farenheitMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_farenheitMenuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_farenheitMenuActionPerformed
 
     public void setResult(String temp) {
         if (temp2CB.getSelectedItem().toString().equals("Celsius")) {
@@ -279,15 +169,15 @@ public class ConverterGUI extends javax.swing.JFrame {
         }
     }
 
-    public void setEquation(String temp) {
-        String formula = controller.ConverterController.getFormula(
-                tempTxt.getText(),
-                temp,
-                temp1CB.getSelectedItem().toString(),
-                temp2CB.getSelectedItem().toString()
-        );
-        equationLbl.setText(formula);
-    }
+//    public void setEquation(String temp) {
+//        String formula = controller.ConverterController.getFormula(
+//                tempTxt.getText(),
+//                temp,
+//                temp1CB.getSelectedItem().toString(),
+//                temp2CB.getSelectedItem().toString()
+//        );
+//        equationLbl.setText(formula);
+//    }
 
     /**
      * @param args the command line arguments
@@ -325,29 +215,12 @@ public class ConverterGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu aboutMenu;
     private javax.swing.JLabel celsiusLbl;
-    private javax.swing.JMenuItem celsiusMenu;
-    private javax.swing.JMenu configMenu;
     private javax.swing.JButton converterBtn;
-    private javax.swing.JMenuItem darkMenu;
-    private javax.swing.JMenuItem englishMenu;
     private javax.swing.JLabel equationLbl;
-    private javax.swing.JMenuItem farenheitMenu;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem kelvinMenu;
-    private javax.swing.JMenu languageMenu;
-    private javax.swing.JMenuItem lightMenu;
-    private javax.swing.JMenuItem portugueseMenu;
-    private javax.swing.JMenuItem projectMenu;
-    private javax.swing.JMenuItem rankineMenu;
-    private javax.swing.JMenuItem reaumurMenu;
     private javax.swing.JLabel resultLbl;
-    private javax.swing.JMenuItem spanishMenu;
     private javax.swing.JComboBox<String> temp1CB;
     private javax.swing.JComboBox<String> temp2CB;
     private javax.swing.JTextField tempTxt;
-    private javax.swing.JMenu temperatureMenu;
-    private javax.swing.JMenu themeMenu;
     // End of variables declaration//GEN-END:variables
 }

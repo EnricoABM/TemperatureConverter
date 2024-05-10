@@ -1,120 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <NonVisualComponents>
-    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
-      <SubComponents>
-        <Menu class="javax.swing.JMenu" name="aboutMenu">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="About"/>
-          </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="projectMenu">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Project"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="projectMenuActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <Menu class="javax.swing.JMenu" name="temperatureMenu">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Scales"/>
-              </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="celsiusMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Celsius"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="celsiusMenuActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="farenheitMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Fareinheit"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="farenheitMenuActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="kelvinMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Kelvin"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kelvinMenuActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="rankineMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Rankine"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="reaumurMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Reaumur"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
-            </Menu>
-          </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="configMenu">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Config"/>
-          </Properties>
-          <SubComponents>
-            <Menu class="javax.swing.JMenu" name="themeMenu">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Theme"/>
-              </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="darkMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Dark"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="lightMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Light"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="languageMenu">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Language"/>
-              </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="englishMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="English"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="portugueseMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Portuguese"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="spanishMenu">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Spanish"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
-            </Menu>
-          </SubComponents>
-        </Menu>
-      </SubComponents>
-    </Menu>
-  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Temperature Converter"/>
   </Properties>
   <SyntheticProperties>
-    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
@@ -157,13 +48,13 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="tempTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                       <Component id="temp2CB" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="temp1CB" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="celsiusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="tempTxt" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="equationLbl" min="-2" pref="16" max="-2" attributes="0"/>
