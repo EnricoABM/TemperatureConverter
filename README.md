@@ -9,6 +9,7 @@ The project classes were separated as defined by **MVC**, with the layers separa
 Swing allows for **better application portability**, as all components were developed purely in Java, making the appearance of the interface independent of the client's operating system.
 The use of **NetBeans** to create graphical interfaces allows for **dynamic and efficient application development**, allowing the programmer not to worry about component instantiation or positioning, focusing on the layout and implementation of the rest of the application.
 
+The `src` folder contains the `.java` files containing the application's source code, separated between the `model`, `controller` and `view` folders. The `build` folder has all the `.class` files referring to the source code classes. The `dist` folder contains the application's `.jar` file. Finally, the `photos` folder has the application icon.
 
 ## Conclusion
 Thanks to the **MVC Architecture**, the software was divided into responsibilities, **improving the potential for reuse and maintainability**. In the future, the project **can be implemented** as a **WEB application efficiently**, with **great reuse of the classes** from the Model and Controller package, only having to worry about the View layer and adapting the Controller layer to a WEB application using Servlet technology .
